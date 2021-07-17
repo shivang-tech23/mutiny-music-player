@@ -54,6 +54,5 @@ app.get('/lyrics',async (req,res) =>{
 })
 
 app.use(express.static(path.join(__dirname, 'build')));
-
-app.listen(5000)
+app.listen(process.env.PORT || 5000);
 
